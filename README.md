@@ -1,1 +1,247 @@
-# site-futebol
+# FUTEBOL MANIA
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Futebol Mania</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #004643, #0db39e);
+    color: #fff;
+  }
+  header {
+    background-color: #021f1e;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  }
+  header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  nav a {
+    color: #0db39e;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #ffcc00;
+  }
+
+  main {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  section {
+    background-color: rgba(0, 31, 31, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgb(13 179 158 / 0.4);
+    padding: 30px;
+    margin-bottom: 40px;
+  }
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #0db39e;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  .news-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  .news-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #0db39e;
+    font-size: 1.1rem;
+  }
+  .news-list li:last-child {
+    border-bottom: none;
+  }
+  .scores-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .scores-table th, .scores-table td {
+    padding: 12px 15px;
+    border: 1px solid #0db39e;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .scores-table th {
+    background-color: #0db39e;
+    color: #021f1e;
+  }
+
+  footer {
+    background-color: #021f1e;
+    color: #0db39e;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+    nav a {
+      margin: 0 10px;
+      font-size: 1rem;
+    }
+    section h2 {
+      font-size: 1.5rem;
+    }
+    .scores-table th, .scores-table td {
+      font-size: 0.9rem;
+      padding: 8px 10px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Futebol Mania</h1>
+  <nav>
+    <a href="#noticias">Notícias</a>
+    <a href="#tabela">Tabela de Jogos</a>
+    <a href="#sobre">Sobre</a>
+  </nav>
+</header>
+<main>
+  <section id="noticias">
+    <h2>Últimas Notícias</h2>
+    <ul class="news-list">
+      <li>Brasil se prepara para a Copa do Mundo FIFA 2026 com amistosos agendados pela Europa.</li>
+      <li>Gabriel Jesus brilha em sua estreia no Arsenal com dois gols na vitória contra o rival.</li>
+      <li>Corinthians anuncia novo treinador para a temporada e promete renovação no elenco.</li>
+      <li>Real Madrid contrata jovem talento brasileiro para reforçar o meio de campo.</li>
+    </ul>
+  </section>
+
+  <section id="tabela">
+    <h2>Tabela de Jogos - Liga Portuguesa (Maio 2025)</h2>
+    <table class="scores-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Mandante</th>
+          <th>Visitante</th>
+          <th>Local</th>
+          <th>Horário</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>20/05/2025</td>
+          <td>Santa Clara</td>
+          <td>FC Porto</td>
+          <td>Estádio de São Miguel</td>
+          <td>20:30</td>
+        </tr>
+        <tr>
+          <td>21/05/2025</td>
+          <td>Benfica</td>
+          <td>Casa Pia</td>
+          <td>Estádio da Luz</td>
+          <td>18:00</td>
+        </tr>
+        <tr>
+          <td>22/05/2025</td>
+          <td>Boavista</td>
+          <td>Moreirense</td>
+          <td>Estádio do Bessa</td>
+          <td>20:00</td>
+        </tr>
+        <tr>
+          <td>23/05/2025</td>
+          <td>AVS</td>
+          <td>Rio Ave</td>
+          <td>Estádio Municipal de Aves</td>
+          <td>19:00</td>
+        </tr>
+        <tr>
+          <td>24/05/2025</td>
+          <td>Gil Vicente</td>
+          <td>Estrela da Amadora</td>
+          <td>Estádio Cidade de Barcelos</td>
+          <td>21:00</td>
+        </tr>
+        <tr>
+          <td>25/05/2025</td>
+          <td>Famalicão</td>
+          <td>Sporting CP</td>
+          <td>Estádio Municipal de Famalicão</td>
+          <td>18:30</td>
+        </tr>
+        <tr>
+          <td>26/05/2025</td>
+          <td>Braga</td>
+          <td>Boavista</td>
+          <td>Estádio Municipal de Braga</td>
+          <td>20:45</td>
+        </tr>
+        <tr>
+          <td>27/05/2025</td>
+          <td>Portimonense</td>
+          <td>Santa Clara</td>
+          <td>Estádio Municipal de Portimão</td>
+          <td>19:30</td>
+        </tr>
+        <tr>
+          <td>28/05/2025</td>
+          <td>Estoril</td>
+          <td>Gil Vicente</td>
+          <td>Estádio António Coimbra da Mota</td>
+          <td>20:30</td>
+        </tr>
+        <tr>
+          <td>29/05/2025</td>
+          <td>Benfica</td>
+          <td>FC Porto</td>
+          <td>Estádio da Luz</td>
+          <td>21:00</td>
+        </tr>
+        <tr>
+          <td>30/05/2025</td>
+          <td>Sporting CP</td>
+          <td>SC Braga</td>
+          <td>Estádio José Alvalade</td>
+          <td>20:00</td>
+        </tr>  
+      </tbody>
+    </table>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre o Futebol Mania</h2>
+    <p>
+      Futebol Mania é uma plataforma dinâmica criada para apaixonados pelo futebol que querem ficar por dentro das últimas novidades, resultados e análises dos principais campeonatos nacionais e internacionais. Nosso objetivo é trazer conteúdo atualizado e confiável para todos os fãs do esporte mais popular do mundo.
+    </p>
+  </section>
+</main>
+<footer>
+  &copy; 2024 Futebol Mania - Todos os direitos reservados
+</footer>
+</body>
+</html>
